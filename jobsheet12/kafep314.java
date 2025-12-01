@@ -17,10 +17,24 @@ public class kafep314 {
         System.out.println("==========================");
         System.out.println("Silahkan pilih menu yang anda inginkan:");
     }
-    public static int hitungTotalHarga(int pilihanMenu, int banyakItem) {
+    public static int hitungTotalHarga(int pilihanMenu, int banyakItem, String kodePromo) {
         int [] hargaItem = {15000, 20000, 22000, 12000, 10000, 18000};
         int hargaTotal = hargaItem[pilihanMenu -1] * banyakItem;
+        if (kodePromo != null && kodePromo.equals("DISKON50")) {
+            System.out.println("Diskon 50% berhasil!");
+            hargaTotal = hargaTotal / 2; // Diskon 50%
+        } else if (kodePromo != null && kodePromo.equals("DISKON30")) {
+            System.out.println("Diskon 30% berhasil!");
+            hargaTotal = hargaTotal - (int)(hargaTotal * 0.3); 
+        } else if (kodePromo != null && !kodePromo.equals("")) {
+            System.out.println("Kode invalid");
+        }
         return hargaTotal;
+    }
+
+    // Overload to allow calling without a promo code
+    public static int hitungTotalHarga(int pilihanMenu, int banyakItem) {
+        return hitungTotalHarga(pilihanMenu, banyakItem, "");
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

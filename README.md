@@ -1,4 +1,5 @@
-// Pertanyaan Percobaan 1,2,3,4,5
+                           // Pertanyaan Percobaan 1,2,3,4,5
+
 // Pertanyaan Percobaan 1
 1. Apakah fungsi tanpa parameter selalu harus bertipe void?
 2. Apakah daftar menu pada program kafe dapat ditampilkan tanpa menggunakan fungsi 
@@ -78,7 +79,7 @@ di Percobaan 5.
 kapan tidak perlu memiliki nilai kembalian, dengan mengacu pada fungsi main, 
 hitungLuas, dan hitungVolume.
 
-//Jawaban Pertanyaan P1-5
+                              //Jawaban Pertanyaan P1-5
 
 // Jawaban P1
 1. Tidak. Fungsi tanpa parameter tidak harus bertipe void. Fungsi tersebut bisa memiliki tipe data kembalian lain (seperti int, String, boolean, dll)
@@ -95,3 +96,13 @@ Jika true: Program akan menjalankan blok if dan mencetak kalimat "Anda mendapatk
 Jika false: Blok if dilewati, kalimat diskon tidak ditampilkan.
 5. Error
 6. Sudah memodifikasi
+7. Sudah
+8. Ya
+
+// Jawaban P3
+1. Butuh Return Value: Ketika hasil pemrosesan dalam fungsi ingin digunakan kembali untuk perhitungan lain atau    disimpan dalam variabel di fungsi pemanggil (misal: main). Contoh: Fungsi hitungTotalHarga mengembalikan nilai int agar total harga bisa disimpan di variabel totalHarga dalam main.
+Tidak Butuh (Void): Ketika fungsi hanya bertugas melakukan proses (seperti output) dan tidak perlu melaporkan nilai balik ke pemanggil. Contoh: Fungsi menu bertipe void karena hanya menampilkan daftar teks ke terminal.
+2. fungsi hitungTotalHarga memiliki tipe data integer dan memiliki parameter (int pilihanMenu, int banyakItem) fungsi ini untuk menghitung total harga yang akan di beli oleh user.
+3. sudah
+4. sudah
+5. 
