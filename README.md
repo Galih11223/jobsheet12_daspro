@@ -105,4 +105,23 @@ Tidak Butuh (Void): Ketika fungsi hanya bertugas melakukan proses (seperti outpu
 2. fungsi hitungTotalHarga memiliki tipe data integer dan memiliki parameter (int pilihanMenu, int banyakItem) fungsi ini untuk menghitung total harga yang akan di beli oleh user.
 3. sudah
 4. sudah
-5. 
+
+// Jawaban P4
+1. karena bersifat fleksibel, dapat menerima jumlah argumen yang tidak terbatas (bisa 0, 1, 5, atau lebih data String)
+2. Sudah
+3. tidak bisa, hanya boleh ada satu parameter varrags dalam satu fungsi
+4. Jika dipanggil tanpa argumen (daftarPengunjung()), Program akan menganggap parameter "namaPengunjung" sebagai array kosong (panjang array = 0). Output: Program hanya akan mencetak baris judul "Daftar Pengunjung Cafe:" saja, tanpa mencetak nama apapun di bawahnya karena perulangan tidak akan dieksekusi.
+
+// Jawaban P5
+1. start- method(main)- deklarasi variabel- memanggil fungsi hitungLuas- menghitung- mengembalikan nilai- menyimpan di variabel L- menampilkan Luas- memanggil fungsi hitungVolume- menghitung- menampilkan volume- end.
+2. Luas alas balok adalah: 12 Volume balok adalah: 60
+Alur=
+Start-Input masuk: p=4, l=3, t=5.-hitungLuas(4, 3) dieksekusi -> 4 * 3 = 12- Hasil 12 dicetak-hitungVolume(5, 4, 3) dieksekusi.-Di dalam volume, memanggil hitungLuas(4, 3) lagi -> dapat 12.-Menghitung volume: 12 * 5 = 60.-Hasil 60 dikembalikan ke main dan dicetak-End.
+3. Di main, int temp = Jumlah(1, 1) -> temp bernilai 2.
+   Panggil TampilJumlah(temp, 5) atau TampilJumlah(2, 5).
+   Di dalam TampilJumlah, dipanggil Jumlah(bil1, bil2) yaitu Jumlah(2, 5) -> hasilnya 7.
+   Hasil 7 dimasukkan ke fungsi TampilHinggaKei(7).
+   Fungsi ini melakukan looping mencetak angka dari 1 sampai 7 tanpa spasi.
+4. (Parameter) Digunakan saat fungsi membutuhkan data input dari luar agar bisa bekerja (dinamis). Jika tidak butuh input luar, tidak perlu parameter. (Return Value) Digunakan saat hasil olahan fungsi ingin diolah lagi atau disimpan dalam variabel. Jika fungsi hanya sekadar menampilkan sesuatu ke layar, tidak butuh return value (void).
+5. Wajib memakai parameter, karena inputan dari user akan dan pasti berbeda beda.
+6. Fungsi ini wajib memiliki return value (int) karena hasil perhitungannya dibutuhkan oleh bagian lain program.
