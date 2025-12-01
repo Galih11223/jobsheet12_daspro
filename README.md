@@ -29,3 +29,69 @@
    pada fungsi Menu() membuat program lebih mudah dibaca dan dikembangkan 
    dibandingkan jika nilai-nilai tersebut ditulis langsung di dalam fungsi tanpa parameter? 
    Jelaskan alasan Anda.
+
+// Pertanyaan Percobaan 3
+1. Jelaskan secara singkat kapan suatu fungsi membutuhkan nilai kembalian (return 
+value) dan kapan fungsi tidak perlu mengembalikan nilai. Berikan minimal satu contoh 
+dari program kafe pada Percobaan 3 untuk masing-masing kasus. 
+2. Fungsi hitungTotalHargaNoAbsen saat ini mengembalikan total harga berdasarkan 
+pilihanMenu dan jumlahPesanan. Sebutkan tipe data nilai kembalian dan dua 
+buah parameter yang digunakan fungsi tersebut. Jelaskan arti masing-masing 
+parameter dalam konteks program kafe. 
+3. Modifikasi kode di atas sehingga fungsi hitungTotalHargaNoAbsen dapat menerima 
+kodePromo. Jika kodePromo adalah "DISKON50", maka mendapat diskon 50% dari 
+totalHarga dan tampilkan diskon. Jika kodePromo adalah "DISKON30", maka 
+mendapat diskon 30% dari totalHarga dan tampilkan diskon. Jika tidak ada kode 
+promo yang berlaku, tampilkan kode invalid dan tidak ada pengurangan total harga 
+totalHarga. 
+4. Modifikasi kode di atas sehingga bisa memilih beberapa jenis menu berbeda serta 
+menampilkan total keseluruhan pesanan. Bagaimana memodifikasi program sehingga 
+pengguna dapat: memesan lebih dari satu jenis menu (misalnya menu 1 dan 3 
+sekaligus), dan menampilkan total keseluruhan pesanan (gabungan dari semua jenis 
+menu)?  
+
+// Pertanyaan Percobaan 4
+1. Jelaskan mengapa penulisan parameter di praktikum 4 ditulis dengan String... 
+namaPengunjung! 
+2. Modifikasi method daftarPengunjung menggunakan for-each loop. 
+3. Bisakah menggunakan dua tipe data varaargs dalam satu fungsi? Jelaskan jawaban 
+Anda berdasarkan aturan varargs di Java, dan berikan contohnya! 
+4. Jelaskan apa yang terjadi jika fungsi daftarPengunjung dipanggil tanpa argumen. 
+Apakah program akan error saat kompilasi, error saat dijalankan, atau tetap berjalan? 
+Jika tetap berjalan, bagaimana output yang dihasilkan? 
+
+// Pertanyaan Percobaan 5
+1. Sebutkan tahapan dan urutan eksekusi program pada Percobaan 5, mulai dari program 
+dijalankan hingga menampilkan luas persegi panjang dan volume balok! 
+2. Tuliskan output yang dihasilkan program HitungBalokNoAbsen jika pengguna 
+memasukkan panjang = 4, lebar = 3, dan tinggi = 5. Jelaskan secara singkat alur 
+jalannya program sampai output tersebut muncul. 
+3. Apakah output dari program di bawah ini kemudian jelaskan alur jalannya program 
+tersebut! 
+4. Pada saat apakah fungsi yang kita buat harus menggunakan parameter atau tidak? 
+Pada saat apakah fungsi yang kita buat harus memiliki nilai kembalian atau tidak? 
+Jelaskan! 
+5. Jelaskan kapan sebuah fungsi sebaiknya menggunakan parameter dan kapan fungsi 
+boleh tanpa parameter, dengan mengacu pada fungsi hitungLuas dan hitungVolume 
+di Percobaan 5. 
+6. Jelaskan kapan sebuah fungsi sebaiknya memiliki nilai kembalian (return value) dan 
+kapan tidak perlu memiliki nilai kembalian, dengan mengacu pada fungsi main, 
+hitungLuas, dan hitungVolume.
+
+//Jawaban Pertanyaan P1-5
+
+// Jawaban P1
+1. Tidak. Fungsi tanpa parameter tidak harus bertipe void. Fungsi tersebut bisa memiliki tipe data kembalian lain (seperti int, String, boolean, dll)
+2. Bisa. Caranya adalah memindahkan semua perintah (System.out.println) langsung ke dalam fungsi main.
+3. Mempersingkat kode program, Dapat memanggil kembali fungsi diluar main
+4. start-fungsi main- menu()- fungsi menu()-back to fungsi main- end
+
+// Jawaban P2
+1. Sebagai input data dari luar ke dalam fungsi
+2. Agar fungsi dapat menampilkan output yang spesifik untuk pelanggan yang member / bukan member dan menentukan logika pemberian diskon berdasarkan status keanggotaan pelanggan tersebut.
+3. Hampir sama. Parameter adalah jenis variabel khusus yang dideklarasikan di dalam tanda kurung fungsi untuk menerima nilai input. Sedangkan variabel biasa dideklarasikan di dalam blok kode untuk menyimpan data sementara.
+4. Parameter isMember bekerja sebagai penentu kondisi (boolean).
+Jika true: Program akan menjalankan blok if dan mencetak kalimat "Anda mendapatkan diskon 10%...".
+Jika false: Blok if dilewati, kalimat diskon tidak ditampilkan.
+5. Error
+6. Sudah memodifikasi
